@@ -10,7 +10,7 @@ stages {
 
             steps {
 
-                echo 'Building..'
+                echo 'Building the Job...'
 
             }
 
@@ -50,7 +50,7 @@ stages {
 
             steps {
 
-                echo 'Deploying....'
+                echo 'Deploying the Job....'
 
             }
 
