@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    parameters{
+     parameters{
           choice(name: 'Select the RUN type for the Job', choices: '—dry-run\n—hot-run', description: 'Trying Parameterized Job')
               }           
 
