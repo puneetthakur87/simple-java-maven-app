@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters{
-          choice(name: 'Select the RUN type for the Job', choices: '—dry-run \n —hot-run', description: 'Trying Parameterized Job')
+          choice(name: 'Select the RUN type for the Job', choices: '—dry-run\n—hot-run', description: 'Trying Parameterized Job')
               }           
 
 stages {
@@ -22,27 +22,21 @@ stages {
 
                 parallel (
 
-          firefox: {
+          Phase1: {
 
-            echo "Firefox Testing"
-
-          },
-
-          Chrome: {
-
-            echo "Chrome Testing"
+            echo "Phase 1 Testing"
 
           },
 
-          IE: {
+          Phase2: {
 
-            echo "IE Testing"
+            echo "Phase 2 Testing"
 
           },
 
-          Mobile: {
+          Phase3: {
 
-            echo "Mobile Testing"
+            echo "Phase 3 Testing"
 
           }
 
