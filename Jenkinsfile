@@ -1,7 +1,7 @@
 pipeline {
     agent any
      parameters{
-          choice(name: 'Select the RUN type for the Job', choices: '—dry-run\n—hot-run', description: 'Trying Parameterized Job')
+          choice(name: 'Select the RUN TYPE for the Job', choices: '—dry-run\n—hot-run', description: 'Trying Parameterized Job')
               }           
 
 stages {
